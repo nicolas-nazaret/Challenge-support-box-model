@@ -1,0 +1,96 @@
+
+body {
+    background-color: rgb(175, 175, 175);
+    font-family: sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    width: 90%;
+    margin: 20px auto;
+    /*
+    Version longue de la ligne au dessus. 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto; 
+    
+    La propriété margin peut avoir entre 1 et 4 valeurs : 
+    1 valeur : ce sera la même marge pour tous les côtés.
+    2 valeurs : la première valeur définit les marges hautes et basses tandis que la seconde définit gauche et droite.
+    3 valeurs : la première définit la marge haute, la seconde les côtés et la dernière le bas.
+    4 valeurs : haut droite bas gauche.
+    */
+    box-sizing: border-box;
+}
+
+main {
+    /* Le padding fonctionne exactement comme le margin à la différence qu'il gère les marges internes d'un élément. */
+    padding: 20px;
+}
+
+/* Pour afficher le menu en ligne, je transforme les "li" grâce à la propriété Display: inline. */
+nav li {
+    display: inline;
+    /* On peut gérer l'écart entre les liens grâce à margin. */
+    margin: 0 5px;
+}
+
+/* Pour aligner les liens de notre menu, on se met sur le parent de ceux-ci. */
+nav ul {
+    text-align: center;
+}
+
+nav {
+    background: #d0d0d0;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+a {
+    color: rgb(245, 72, 101);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: grey;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 10px;
+    border-bottom: 4px solid rgb(177, 177, 177);
+}
+ 
+h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.gif {
+    /* Je force la largeur de l'image à ne pas dépasser la largeur de son parent. */
+    max-width: 70%;
+    border-radius: 10px;
+    border: 1px solid black
+}
+
+/* Je créé un container pour pouvoir centrer l'image sans toucher aux éléments autour. */
+.container-image {
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(221, 221, 221);
+    padding: 10px;
+    text-align: center;
+}
